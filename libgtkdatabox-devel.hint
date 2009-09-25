@@ -1,0 +1,8 @@
+category: Gnome
+requires: libgtkdatabox0.9.1_1 libcairo-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
+external-source: gtkdatabox
+sdesc: "GTK+ widget for display of fluctuating numerical data (development)"
+ldesc: "GtkDatabox is a widget for live display of large amounts of 
+fluctuating numerical data. Data presentation (e.g. on linear or 
+logarithmic scales, as dots or lines, with markers/labels) as well as 
+user interaction (e.g. measuring distances) is easy."

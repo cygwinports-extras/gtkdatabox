@@ -1,0 +1,12 @@
+Must not be static, else gcc optimizes it away.
+
+--- origsrc/gtkdatabox-0.9.1.1/glade/gladeui-databox.c	2009-04-17 16:15:02.000000000 -0500
++++ src/gtkdatabox-0.9.1.1/glade/gladeui-databox.c	2009-09-25 01:04:18.222945500 -0500
+@@ -36,6 +36,7 @@
+ #include <gtkdatabox.h>
+ #include <gtkdatabox_ruler.h>
+ 
++void foobarbaz(void) { gtk_databox_ruler_new(GTK_ORIENTATION_HORIZONTAL); }
+ 
+ static void
+ databox_widget_parent_changed (GtkWidget * widget,

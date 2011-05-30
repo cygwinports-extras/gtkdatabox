@@ -1,5 +1,5 @@
 category: Gnome
-requires: libgcc1 libgladeui1_9 libglib2.0_0 libgtk2.0_0 libgtkdatabox0.9.1_1
+requires: glade3 libglib2.0_0 libgtk2.0_0 libgtkdatabox0.9.1_1
 external-source: gtkdatabox
 sdesc: "GTK+ widget for display of fluctuating numerical data (Glade3 plugin)"
 ldesc: "GtkDatabox is a widget for live display of large amounts of 

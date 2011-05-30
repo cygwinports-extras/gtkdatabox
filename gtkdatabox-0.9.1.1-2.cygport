@@ -3,10 +3,14 @@ inherit gnome2
 DESCRIPTION="GTK+ widget for displaying fluctuating numerical data"
 HOMEPAGE="http://sourceforge.net/projects/gtkdatabox/"
 SRC_URI="mirror://sourceforge/gtkdatabox/${P}.tar.gz"
-PATCH_URI="0.9.1.1-glade3.patch
-           0.9.1.1-no-undefined.patch"
 
-PKG_NAMES="${PN} lib${PN}${PV[1]}.${PV[2]}.${PV[3]}_${PV[4]:-0} lib${PN}-devel glade3-${PN}"
+PATCH_URI="
+	0.9.1.1-glade3.patch
+	0.9.1.1-no-undefined.patch
+	0.9.1.1-deprecated-symbols.patch
+"
+
+PKG_NAMES="lib${PN}${PV[1]}.${PV[2]}.${PV[3]}_${PV[4]:-0} lib${PN}-devel glade3-${PN}"
 declare lib${PN}${PV[1]}_${PV[2]}_${PV[3]}_${PV[4]:-0}_CONTENTS="usr/bin/cyg${PN}-${PV[1]}-${PV[2]}-${PV[3]}-${PV[4]:-0}.dll"
 # libgtkdatabox_common_CONTENTS="usr/share/doc/"
 libgtkdatabox_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/

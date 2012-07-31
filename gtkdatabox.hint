@@ -1,6 +1,0 @@
-category: Gnome
-sdesc: "GTK+ widget for display of fluctuating numerical data (sources)"
-ldesc: "GtkDatabox is a widget for live display of large amounts of 
-fluctuating numerical data. Data presentation (e.g. on linear or 
-logarithmic scales, as dots or lines, with markers/labels) as well as 
-user interaction (e.g. measuring distances) is easy."
